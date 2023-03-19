@@ -28,7 +28,7 @@ public:
     windows.push_back(w);
     return w;
   }
-
+   
   shared_ptr<Window> multicolumn(const string& title, uint8_t columnCount, uint8_t columnWidth, uint8_t charsHigh)
   {
     auto w = make_shared<Window>(title, columnCount * columnWidth * charWidth, charsHigh * charHeight);
